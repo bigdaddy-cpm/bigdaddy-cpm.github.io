@@ -1,0 +1,3 @@
+# Keep repository feed bytes stable so its published MD5 remains valid.
+/addons.xml -text
+/addons.xml.md5 -text
