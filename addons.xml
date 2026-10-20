@@ -282,7 +282,7 @@
 </addon>
 
 
-<addon id="skin.arctic.fuse.3.bigdaddy" name="Arctic Fuse 3 (BigDaddy)" provider-name="jurialmunkey, jamal2362, bigdaddy-cpm" version="1.0.0">
+<addon id="skin.arctic.fuse.3.bigdaddy" name="Arctic Fuse 3 (BigDaddy)" provider-name="jurialmunkey, jamal2362, bigdaddy-cpm" version="1.0.1">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinvariables" version="2.2.9" />
@@ -305,24 +305,41 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">A minimal row based skin</summary>
-        <summary lang="es">Una skin minimalista de diseÃ±o horizontal</summary>
+        <summary lang="es">Una skin minimalista de diseño horizontal</summary>
         <summary lang="de">Ein minimalistisches, zeilenbasiertes Skin</summary>
-        <summary lang="zh">ç®€çº¦è¡Œå¼å¸ƒå±€çš®è‚¤</summary>
-        <summary lang="ar">Ø³ÙƒÙ† Ù…Ø®ÙÙ Ø¨Ù‚ÙˆØ§Ø¦Ù… Ø§ÙÙ‚ÙŠØ©</summary>
+        <summary lang="zh">简约行式布局皮肤</summary>
+        <summary lang="ar">سكن مخفف بقوائم افقية</summary>
         <description lang="en">Arctic Fuse 3 is a minimal row based skin with customisable widgets</description>
-        <description lang="es">Arctic Fuse 3 es una skin minimalista de diseÃ±o horizontal con widgets personalizables</description>
+        <description lang="es">Arctic Fuse 3 es una skin minimalista de diseño horizontal con widgets personalizables</description>
         <description lang="de">Arctic Fuse 3 ist ein minimalistisches, zeilenbasiertes Skin mit anpassbaren Widgets</description>
-        <description lang="zh">Arctic Fuse 3 æ˜¯ä¸€æ¬¾é‡‡ç”¨ç®€çº¦è¡Œå¼å¸ƒå±€çš„ Kodi çš®è‚¤ï¼Œæ”¯æŒå°ç»„ä»¶è‡ªå®šä¹‰åŠŸèƒ½</description>
-        <description lang="ar">Arctic Fuse 3 Ø³ÙƒÙ† Ù…Ø®ÙÙ Ø¨Ù‚ÙˆØ§Ø¦Ù… Ø§ÙÙ‚ÙŠØ© ÙˆØ¨Ø§Ù…ÙƒØ§Ù†ÙŠØ© ØªØ®ØµÙŠØµ Ø§Ù„Ø§Ø®ØªØµØ§Ø±Ø§Øª</description>
+        <description lang="zh">Arctic Fuse 3 是一款采用简约行式布局的 Kodi 皮肤，支持小组件自定义功能</description>
+        <description lang="ar">Arctic Fuse 3 سكن مخفف بقوائم افقية وبامكانية تخصيص الاختصارات</description>
         <platform>all</platform>
         <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
         <forum />
         <source>https://github.com/bigdaddy-cpm/skin.arctic.fuse.3</source>
-        <news>1.0.0: LibreELEC DV Beta4 / Kodi 22 compatibility packaging. Separate skin identity, platform-aware labels, optional seasonal splash with bundled fallback, and no Android reboot action.</news>
+        <news>1.0.1: Playback-info OSD button now prefers BigDaddy Playback Info when installed; retains TinyPPI fallback. LibreELEC DV Beta4 / Kodi 22 adaptation with separate skin identity and native DV diagnostics.</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+    </extension>
+</addon>
+<addon id="script.bigdaddy.playbackinfo" name="BigDaddy Playback Info" version="1.0.0" provider-name="bigdaddy-cpm">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">On-demand playback statistics for LibreELEC</summary>
+        <description lang="en_GB">Video, audio, subtitle and system information during playback, with a shortcut to Kodi's native process information and supported Dolby Vision diagnostics. Targeted at CroqueMr LibreELEC DV Beta4 / Kodi 22. No background service, web server or Amlogic VS10 controls.</description>
+        <platform>linux</platform>
+        <license>AGPL-3.0-or-later</license>
+        <source>https://github.com/bigdaddy-cpm/script.bigdaddy.playbackinfo</source>
+        <assets><icon>icon.png</icon></assets>
+        <news>1.0.0: Initial LibreELEC playback overlay. New identity and artwork; selected formatting code adapted from TinyPPI, with attribution.</news>
     </extension>
 </addon>
 </addons>

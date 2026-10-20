@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.bigdaddy.playbackinfo" name="BigDaddy Playback Info" version="1.0.0" provider-name="bigdaddy-cpm">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">On-demand playback statistics for LibreELEC</summary>
+        <description lang="en_GB">Video, audio, subtitle and system information during playback, with a shortcut to Kodi's native process information and supported Dolby Vision diagnostics. Targeted at CroqueMr LibreELEC DV Beta4 / Kodi 22. No background service, web server or Amlogic VS10 controls.</description>
+        <platform>linux</platform>
+        <license>AGPL-3.0-or-later</license>
+        <source>https://github.com/bigdaddy-cpm/script.bigdaddy.playbackinfo</source>
+        <assets><icon>icon.png</icon></assets>
+        <news>1.0.0: Initial LibreELEC playback overlay. New identity and artwork; selected formatting code adapted from TinyPPI, with attribution.</news>
+    </extension>
+</addon>
