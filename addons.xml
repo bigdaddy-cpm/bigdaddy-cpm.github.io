@@ -282,4 +282,47 @@
 </addon>
 
 
+<addon id="skin.arctic.fuse.3.bigdaddy" name="Arctic Fuse 3 (BigDaddy)" provider-name="jurialmunkey, jamal2362, bigdaddy-cpm" version="1.0.0">
+    <requires>
+        <import addon="xbmc.gui" version="5.17.0" />
+        <import addon="script.skinvariables" version="2.2.9" />
+        <import addon="script.texturemaker" version="0.2.9" />
+        <import addon="plugin.video.themoviedb.helper" version="6.17.9" />
+        <import addon="resource.images.weathericons.white" version="0.0.1" />
+        <import addon="resource.images.arctic.splash" version="1.0.0" optional="true" />
+        <import addon="resource.images.studios.coloured" version="0.0.1" />
+        <import addon="resource.font.robotocjksc" version="0.0.3" />
+    </requires>
+    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
+        <res aspect="16:9" default="true" folder="1080i" width="1920" height="1080" />
+        <res aspect="3:2" default="false" folder="1080i" width="1620" height="1080" />
+        <res aspect="4:3" default="false" folder="1080i" width="1440" height="1080" />
+        <res aspect="16:10" default="false" folder="1080i" width="1728" height="1080" />
+        <res aspect="17:9" default="false" folder="1080i" width="2040" height="1080" />
+        <res aspect="21:9" default="false" folder="1080i" width="2520" height="1080" />
+        <res aspect="19.5:9" default="false" folder="1080i" width="2340" height="1080" />
+        <res aspect="18:9" default="false" folder="1080i" width="2160" height="1080" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">A minimal row based skin</summary>
+        <summary lang="es">Una skin minimalista de diseÃ±o horizontal</summary>
+        <summary lang="de">Ein minimalistisches, zeilenbasiertes Skin</summary>
+        <summary lang="zh">ç®€çº¦è¡Œå¼å¸ƒå±€çš®è‚¤</summary>
+        <summary lang="ar">Ø³ÙƒÙ† Ù…Ø®ÙÙ Ø¨Ù‚ÙˆØ§Ø¦Ù… Ø§ÙÙ‚ÙŠØ©</summary>
+        <description lang="en">Arctic Fuse 3 is a minimal row based skin with customisable widgets</description>
+        <description lang="es">Arctic Fuse 3 es una skin minimalista de diseÃ±o horizontal con widgets personalizables</description>
+        <description lang="de">Arctic Fuse 3 ist ein minimalistisches, zeilenbasiertes Skin mit anpassbaren Widgets</description>
+        <description lang="zh">Arctic Fuse 3 æ˜¯ä¸€æ¬¾é‡‡ç”¨ç®€çº¦è¡Œå¼å¸ƒå±€çš„ Kodi çš®è‚¤ï¼Œæ”¯æŒå°ç»„ä»¶è‡ªå®šä¹‰åŠŸèƒ½</description>
+        <description lang="ar">Arctic Fuse 3 Ø³ÙƒÙ† Ù…Ø®ÙÙ Ø¨Ù‚ÙˆØ§Ø¦Ù… Ø§ÙÙ‚ÙŠØ© ÙˆØ¨Ø§Ù…ÙƒØ§Ù†ÙŠØ© ØªØ®ØµÙŠØµ Ø§Ù„Ø§Ø®ØªØµØ§Ø±Ø§Øª</description>
+        <platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <forum />
+        <source>https://github.com/bigdaddy-cpm/skin.arctic.fuse.3</source>
+        <news>1.0.0: LibreELEC DV Beta4 / Kodi 22 compatibility packaging. Separate skin identity, platform-aware labels, optional seasonal splash with bundled fallback, and no Android reboot action.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 </addons>
