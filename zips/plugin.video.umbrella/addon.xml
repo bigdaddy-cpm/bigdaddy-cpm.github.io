@@ -1,4 +1,4 @@
-<addon id="plugin.video.umbrella" name="Umbrella" provider-name="Umbrella" version="6.7.99">
+<addon id="plugin.video.umbrella" name="Umbrella" provider-name="Umbrella" version="6.7.100">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -270,9 +270,10 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B]Custom update - v6.7.99 - October 28th, 2026 [/B]
---[Update] Merge official Umbrella 6.7.98: Trakt authentication, airdate scraper matching and Premiumize refresh fixes.
+[B]Custom update - v6.7.100 - November 2nd, 2026 [/B]
+--[Update] Merge official Umbrella 6.7.99: continuous playback and queue fixes, Dolby audio preference, Floppy OAuth and browsing improvements.
 --[Preserve] AIOStreams, anime episode mapping, source details and custom settings backups.
+--[Fix] Return safely if the playlist disappears while reading next-episode metadata.
 		</news>
 	</extension>
 
